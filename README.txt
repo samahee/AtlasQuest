@@ -1,4 +1,7 @@
 AddOn: AtlasQuest
+Version: 4.1.6
+Last Update: 19.09.2024
+Added missing quest in Maraudon/Hateforge Quarry + small text edits
 
 Version: 4.1.5
 Last Update: 02(February).02(2nd).2024
