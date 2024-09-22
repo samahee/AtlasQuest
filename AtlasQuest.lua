@@ -1003,7 +1003,7 @@ AtlasQuest_updater:SetScript("OnEvent", function()
             if remoteversion > localversion then
                 AtlasQuest_updateavailable = remoteversion
                 if not alreadyshown then
-                    DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasQuest]|r New version available! https://forum.turtle-wow.org/viewtopic.php?t=7959")
+                    DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasQuest]|r New version available! https://github.com/Otari98/AtlasQuest")
                     alreadyshown = true
                 end
             end
@@ -1022,7 +1022,7 @@ AtlasQuest_updater:SetScript("OnEvent", function()
                     if remoteversion > localversion then
                         AtlasQuest_updateavailable = remoteversion
                         if not alreadyshown then
-                            DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasQuest]|r New version available! https://forum.turtle-wow.org/viewtopic.php?t=7959")
+                            DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasQuest]|r New version available! https://github.com/Otari98/AtlasQuest")
                             alreadyshown = true
                         end
                     end
@@ -1043,7 +1043,7 @@ AtlasQuest_updater:SetScript("OnEvent", function()
 
     if event == "PLAYER_ENTERING_WORLD" then
       if not alreadyshown and localversion < remoteversion then
-        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasQuest]|r New version available! https://forum.turtle-wow.org/viewtopic.php?t=7959")
+        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasQuest]|r New version available! https://github.com/Otari98/AtlasQuest")
         AtlasQuest_updateavailable = localversion
         alreadyshown = true
       end
