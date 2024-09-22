@@ -107,6 +107,7 @@ AQ = {};
 function AtlasQuest_OnEvent()
    if (event == "VARIABLES_LOADED") then
       VariablesLoaded = 1; -- data is loaded completely
+      tinsert(UISpecialFrames, "AtlasQuestOptionFrame")
    else
       AtlasQuest_Initialize(); -- player enters world / initialize the data
    end
