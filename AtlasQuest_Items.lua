@@ -1249,7 +1249,15 @@ Inst8Quest15ID1 = "61068"
 
 
 --Quest 1 Horde
-Inst8Quest1Rewardtext_HORDE = AQNoReward
+Inst8Quest1Rewardtext_HORDE = AQDiscription_REWARD..WHITE.."1"..AQDiscription_OR..WHITE.."2"
+--ITEM1
+Inst8Quest1ITC1_HORDE = Itemc4;
+Inst8Quest1description1_HORDE = AQITEM_BACK
+Inst8Quest1ID1_HORDE = "20218"
+--ITEM2
+Inst8Quest1ITC2_HORDE = Itemc4;
+Inst8Quest1description2_HORDE = AQITEM_BACK
+Inst8Quest1ID2_HORDE = "20219"
 
 --Quest 2 Horde
 Inst8Quest2Rewardtext_HORDE = AQDiscription_REWARD..WHITE.."1"
@@ -3197,13 +3205,13 @@ Inst25Quest18ID3 = "81251"
 Inst25Quest18ITC4 = Itemc4;
 Inst25Quest18description4 = AQITEM_ITEM
 Inst25Quest18ID4 = "81250"
-
+--[[
 --Quest 19 Alliance
 Inst25Quest19Rewardtext = AQDiscription_REWARD..WHITE.."1"
 --ITEM1
 Inst25Quest19ITC1 = Itemc5;
 Inst25Quest19description1 = AQITEM_TABARD
-Inst25Quest19ID1 = "82002"
+Inst25Quest19ID1 = "82002"]]
 
 
 
@@ -3364,13 +3372,13 @@ Inst25Quest19ID3_HORDE = "81251"
 Inst25Quest19ITC4_HORDE = Itemc4;
 Inst25Quest19description4_HORDE = AQITEM_ITEM
 Inst25Quest19ID4_HORDE = "81250"
-
+--[[
 --Quest 20 Horde
 Inst25Quest20Rewardtext_HORDE = AQDiscription_REWARD..WHITE.."1"
 --ITEM1
 Inst25Quest20ITC1_HORDE = Itemc5;
 Inst25Quest20description1_HORDE = AQITEM_TABARD
-Inst25Quest20ID1_HORDE = "82002"
+Inst25Quest20ID1_HORDE = "82002"]]
 
 
 --------------- INST26 - The Ruins of Ahn'Qiraj (AQ20) ---------------

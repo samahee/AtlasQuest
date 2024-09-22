@@ -1832,7 +1832,9 @@ Inst8Quest1_Location = "Prospector Ironboot (Tanaris - Steamwheedle Port; "..YEL
 Inst8Quest1_Note = "You find the tablets near "..YELLOW.."[7]"..WHITE.." and "..YELLOW.."[9]"..WHITE..".\nThe Rewards belong to 'Confront Yeh'kinya'. You find Yeh'kinya near Prospector Ironboot."
 Inst8Quest1_Prequest = "The Lost Tablets of Mosh'aru" -- 5065
 Inst8Quest1_Folgequest = "Confront Yeh'kinya" -- 8181
--- No Rewards for this quest
+
+Inst8Quest1name1 = "Faded Hakkari Cloak"
+Inst8Quest1name2 = "Tattered Hakkari Cape"
 
 --Quest 2 Alliance
 Inst8Quest2 = "2. Kibler's Exotic Pets" -- 4729
@@ -5111,7 +5113,7 @@ Inst25Quest18name1 = "Reinforced Red Pounder"
 Inst25Quest18name2 = "Reinforced Green Pounder"
 Inst25Quest18name3 = "Reinforced Blue Pounder"
 Inst25Quest18name4 = "Reinforced Black Pounder"
-
+--[[
 --Quest 19 Alliance
 Inst25Quest19 = "(TW)19. To Wake The Ashbringer" -- 20002
 Inst25Quest19_Level = "60"
@@ -5123,27 +5125,27 @@ Inst25Quest19_Prequest = "Orb of Pure Light -> Seek Help Elsewhere" --20000,2000
 Inst25Quest19_Folgequest = "Spirit of the Ashbringer"
 --
 Inst25Quest19name1 = "Tabard of the Ashbringer" --82002
-
---Quest 20 Alliance
-Inst25Quest20 = "(TW)20. Rothlen Family Brooch" -- 41000
-Inst25Quest20_Level = "60"
-Inst25Quest20_Attain = "55"
-Inst25Quest20_Aim = "Recover the Rothlen Family Brooch from Stratholme for Duke Rothlen in Karazhan."
-Inst25Quest20_Location = "Duke Rothlen (Karazhan; "..YELLOW.."[Karazhan - f]"..WHITE..")"
-Inst25Quest20_Note = "Rothlen Family Brooch next to boss The Unforgiven "..YELLOW.."[4]"..WHITE.." in the chest.\nQuest chain starts with epic item random drop 'Scribbled Cooking Notes' "..YELLOW.."[Karazhan]"..WHITE.."."
-Inst25Quest20_Prequest = "Scribbled Cooking Notes "..YELLOW.."[Karazhan]"..WHITE.." -> Lost and Found "..YELLOW.."[Karazhan]"..WHITE.."" -- 40998, 40999
-Inst25Quest20_Folgequest = "The Secret Recipe ("..YELLOW.."[Karazhan]"..WHITE..")" -- 41001
+]]
+--Quest 19 Alliance
+Inst25Quest19 = "(TW)19. Rothlen Family Brooch" -- 41000
+Inst25Quest19_Level = "60"
+Inst25Quest19_Attain = "55"
+Inst25Quest19_Aim = "Recover the Rothlen Family Brooch from Stratholme for Duke Rothlen in Karazhan."
+Inst25Quest19_Location = "Duke Rothlen (Karazhan; "..YELLOW.."[Karazhan - f]"..WHITE..")"
+Inst25Quest19_Note = "Rothlen Family Brooch next to boss The Unforgiven "..YELLOW.."[4]"..WHITE.." in the chest.\nQuest chain starts with epic item random drop 'Scribbled Cooking Notes' "..YELLOW.."[Karazhan]"..WHITE.."."
+Inst25Quest19_Prequest = "Scribbled Cooking Notes "..YELLOW.."[Karazhan]"..WHITE.." -> Lost and Found "..YELLOW.."[Karazhan]"..WHITE.."" -- 40998, 40999
+Inst25Quest19_Folgequest = "The Secret Recipe ("..YELLOW.."[Karazhan]"..WHITE..")" -- 41001
 -- No Rewards for this quest
 
---Quest 21 Alliance
-Inst25Quest21 = "(TW)21. The Key to Karazhan VII" -- 40826
-Inst25Quest21_Level = "60"
-Inst25Quest21_Attain = "58"
-Inst25Quest21_Aim = "Find four Echoes of Medivh. They might be found in places of great significance for the mage. Then return to Vandol with the key."
-Inst25Quest21_Location = "Dolvan Bracewind (Dustwallow Marsh - ; "..YELLOW.."[71.1,73.2]"..WHITE..")"
-Inst25Quest21_Note = "Second Feather of Medivh on the ground in the place where Elder Farwhisper (Lunar Festival) "..YELLOW.."[5]"..WHITE.." is.\nFirst Feather of Medivh "..YELLOW.."[Undercity]"..WHITE.." behind the entrance throne.\nThird Feather of Medivh "..YELLOW.."[Alterac Mountain]"..WHITE.." on the end of first(western) cliff "..YELLOW.."[30.8,87.4]"..WHITE..".\nFourth Feather of Medivh "..YELLOW.."[Hyjal]"..WHITE.." on the end of the cliff "..YELLOW.."[31.8,70.5]"..WHITE.."."
-Inst25Quest21_Prequest = "The Key to Karazhan VI" -- 40825
-Inst25Quest21_Folgequest = "The Key to Karazhan VIII ("..YELLOW.."Dire Maul West"..WHITE..")" -- 40827
+--Quest 20 Alliance
+Inst25Quest20 = "(TW)20. The Key to Karazhan VII" -- 40826
+Inst25Quest20_Level = "60"
+Inst25Quest20_Attain = "58"
+Inst25Quest20_Aim = "Find four Echoes of Medivh. They might be found in places of great significance for the mage. Then return to Vandol with the key."
+Inst25Quest20_Location = "Dolvan Bracewind (Dustwallow Marsh - ; "..YELLOW.."[71.1,73.2]"..WHITE..")"
+Inst25Quest20_Note = "Second Feather of Medivh on the ground in the place where Elder Farwhisper (Lunar Festival) "..YELLOW.."[5]"..WHITE.." is.\nFirst Feather of Medivh "..YELLOW.."[Undercity]"..WHITE.." behind the entrance throne.\nThird Feather of Medivh "..YELLOW.."[Alterac Mountain]"..WHITE.." on the end of first(western) cliff "..YELLOW.."[30.8,87.4]"..WHITE..".\nFourth Feather of Medivh "..YELLOW.."[Hyjal]"..WHITE.." on the end of the cliff "..YELLOW.."[31.8,70.5]"..WHITE.."."
+Inst25Quest20_Prequest = "The Key to Karazhan VI" -- 40825
+Inst25Quest20_Folgequest = "The Key to Karazhan VIII ("..YELLOW.."Dire Maul West"..WHITE..")" -- 40827
 -- No Rewards for this quest
 
 
@@ -5380,7 +5382,7 @@ Inst25Quest19name1_HORDE = "Reinforced Red Pounder"
 Inst25Quest19name2_HORDE = "Reinforced Green Pounder"
 Inst25Quest19name3_HORDE = "Reinforced Blue Pounder"
 Inst25Quest19name4_HORDE = "Reinforced Black Pounder"
-
+--[[
 --Quest 20 Horde
 Inst25Quest20_HORDE = "(TW)20. To Wake The Ashbringer"
 Inst25Quest20_HORDE_Level = Inst25Quest19_Level
@@ -5392,9 +5394,20 @@ Inst25Quest20_HORDE_Prequest = Inst25Quest19_Prequest
 Inst25Quest20_HORDE_Folgequest = Inst25Quest19_Folgequest
 --
 Inst25Quest20name1_HORDE = Inst25Quest19name1 --82002
+]]
+--Quest 20 Horde (same as Quest 19 Alliance)
+Inst25Quest20_HORDE = "(TW)20. Rothlen Family Brooch" -- 41000
+Inst25Quest20_HORDE_Level = Inst25Quest19_Level
+Inst25Quest20_HORDE_Attain = Inst25Quest19_Attain
+Inst25Quest20_HORDE_Aim = Inst25Quest19_Aim
+Inst25Quest20_HORDE_Location = Inst25Quest19_Location
+Inst25Quest20_HORDE_Note = Inst25Quest19_Note
+Inst25Quest20_HORDE_Prequest = Inst25Quest19_Prequest
+Inst25Quest20_HORDE_Folgequest = Inst25Quest19_Folgequest
+-- No Rewards for this quest
 
 --Quest 21 Horde (same as Quest 20 Alliance)
-Inst25Quest21_HORDE = "(TW)21. Rothlen Family Brooch" -- 41000
+Inst25Quest21_HORDE = "(TW)21. The Key to Karazhan VII" -- 40826
 Inst25Quest21_HORDE_Level = Inst25Quest20_Level
 Inst25Quest21_HORDE_Attain = Inst25Quest20_Attain
 Inst25Quest21_HORDE_Aim = Inst25Quest20_Aim
@@ -5402,17 +5415,6 @@ Inst25Quest21_HORDE_Location = Inst25Quest20_Location
 Inst25Quest21_HORDE_Note = Inst25Quest20_Note
 Inst25Quest21_HORDE_Prequest = Inst25Quest20_Prequest
 Inst25Quest21_HORDE_Folgequest = Inst25Quest20_Folgequest
--- No Rewards for this quest
-
---Quest 22 Horde (same as Quest 21 Alliance)
-Inst25Quest22_HORDE = "(TW)22. The Key to Karazhan VII" -- 40826
-Inst25Quest22_HORDE_Level = Inst25Quest21_Level
-Inst25Quest22_HORDE_Attain = Inst25Quest21_Attain
-Inst25Quest22_HORDE_Aim = Inst25Quest21_Aim
-Inst25Quest22_HORDE_Location = Inst25Quest21_Location
-Inst25Quest22_HORDE_Note = Inst25Quest21_Note
-Inst25Quest22_HORDE_Prequest = Inst25Quest21_Prequest
-Inst25Quest22_HORDE_Folgequest = Inst25Quest21_Folgequest
 -- No Rewards for this quest
 
 
