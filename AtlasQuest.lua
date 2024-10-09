@@ -980,6 +980,7 @@ AtlasQuest_updater:SetScript("OnEvent", function()
     end
   end)
 ]]
+--[[
 --Update announcing code taken from pfUI
 local major, minor, fix = AtlasQuest_strsplit(".", tostring(GetAddOnMetadata("AtlasQuest", "Version")))
 
@@ -1057,3 +1058,4 @@ AtlasQuest_updater:SetScript("OnEvent", function()
       end
     end
   end)
+]]
