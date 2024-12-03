@@ -35,6 +35,14 @@ local BLUE = "|cff0070dd";
 local ORANGE = "|cffFF8400";
 local YELLOW = "|cffFFd200";   -- Ingame Yellow
 
+local MAGE = "|cff69ccf0";
+local PALADIN = "|cfff58cba";
+local WARRIOR = "|cffc79c6e";
+local ROGUE = "|cfffff569";
+local DRUID = "|cffff7d0a";
+local HUNTER = "|cffabd473";
+local SHAMAN = "|cff0070de";
+local WARLOCK = "|cff9482c9";
 
 ---------------
 --- OPTIONS ---
@@ -82,10 +90,10 @@ AQERRORNOTSHOWN = "This item is not safe!"
 AQERRORASKSERVER = "You can right-click to attempt to query the server. You may be disconnected."
 AQOptionB = "Options"
 AQStoryB = "Story"
-AQNoReward = ""..BLUE.." No Rewards"
+AQNoReward = ""..BLUE.."No Rewards"
 AQDiscription_OR = ""..GREY.." or "..WHITE..""
 AQDiscription_AND = ""..GREY.." and "..WHITE..""
-AQDiscription_REWARD = ""..BLUE.." Reward: "
+AQDiscription_REWARD = ""..BLUE.."Reward: "
 AQDiscription_ATTAIN = "Attain: "
 AQDiscription_LEVEL = "Level: "
 AQDiscription_START = "Starts at: \n"
@@ -232,8 +240,8 @@ Inst1Quest6_Level = "22"
 Inst1Quest6_Attain = "20"
 Inst1Quest6_Aim = "Using Jordan's Weapon Notes, find some Whitestone Oak Lumber, Bailor's Refined Ore Shipment, Jordan's Smithing Hammer, and a Kor Gem, and return them to Jordan Stilwell in Ironforge."
 Inst1Quest6_Location = "Jordan Stilwell (Dun Morogh - Ironforge Entrance; "..YELLOW.."52,36"..WHITE..")"
-Inst1Quest6_Note = "Paladin only: To see the note click on "..YELLOW.."[The Test of Righteousness Information]"..WHITE.."."
-Inst1Quest6_Page = {2, "Only Paladins can get this quest!\n\n1. You get the  Whitestone Oak Lumber from Goblin Woodcarvers in "..YELLOW.."[Deadmines]"..WHITE.." near "..YELLOW.."[3]"..WHITE..".\n\n2. To get the Bailor's Refined Ore Shipment you must talk to Bailor Stonehand (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE.."). He gives you the 'Bailor's Ore Shipment' quest. You find the Jordan's Ore Shipment behind a tree at "..YELLOW.."71,21"..WHITE.."\n\n3. You get Jordan's Smithing Hammer in "..YELLOW.."[Shadowfang Keep]"..WHITE.." at "..YELLOW.."[3]"..WHITE..".\n\n4. To get a Kor Gem you have to go to Thundris Windweaver (Darkshore - Auberdine; "..YELLOW.."37,40"..WHITE..") and do the 'Seeking the Kor Gem' quest. For this quest, you must kill Blackfathom oracles or priestesses before "..YELLOW.."[Blackfathom Deeps]"..WHITE..". They drop a corrupted Kor Gem. Thundris Windweaver will clean it for you.", };
+Inst1Quest6_Note = PALADIN.."(Paladin only)"..WHITE.." To see the note click on "..YELLOW.."[The Test of Righteousness Information]"..WHITE.."."
+Inst1Quest6_Page = {2, "1. You get the  Whitestone Oak Lumber from Goblin Woodcarvers in "..YELLOW.."[Deadmines]"..WHITE.." near "..YELLOW.."[3]"..WHITE..".\n\n2. To get the Bailor's Refined Ore Shipment you must talk to Bailor Stonehand (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE.."). He gives you the 'Bailor's Ore Shipment' quest. You find the Jordan's Ore Shipment behind a tree at "..YELLOW.."71,21"..WHITE.."\n\n3. You get Jordan's Smithing Hammer in "..YELLOW.."[Shadowfang Keep]"..WHITE.." at "..YELLOW.."[3]"..WHITE..".\n\n4. To get a Kor Gem you have to go to Thundris Windweaver (Darkshore - Auberdine; "..YELLOW.."37,40"..WHITE..") and do the 'Seeking the Kor Gem' quest. For this quest, you must kill Blackfathom oracles or priestesses before "..YELLOW.."[Blackfathom Deeps]"..WHITE..". They drop a corrupted Kor Gem. Thundris Windweaver will clean it for you.", };
 Inst1Quest6_Prequest = "The Tome of Valor -> The Test of Righteousness" -- 1651 -> 1653
 Inst1Quest6_Folgequest = "The Test of Righteousness" -- 1806
 --
@@ -256,7 +264,7 @@ Inst1Quest8_Level = "22"
 Inst1Quest8_Attain = "15"
 Inst1Quest8_Aim = "End Cookie, bring Grayson's Pendant"
 Inst1Quest8_Location = "Captain Grayson (Westfall - Lighthouse; "..YELLOW.."30,86"..WHITE..")"
-Inst1Quest8_Note = "You start this Questline on the northwest island(middle and biggest) Westfall; red book on the ground "..YELLOW.."26.1,16.5"..WHITE..").\n"
+Inst1Quest8_Note = "You start this Questline on the northwest island in Westfall; red book on the ground "..YELLOW.."26.1,16.5"..WHITE..").\n"
 Inst1Quest8_Prequest = "Food for Sailing Thoughts?" -- 40395
 Inst1Quest8_Folgequest = "No"
 --
@@ -268,7 +276,7 @@ Inst1Quest9_Level = "19"
 Inst1Quest9_Attain = "15"
 Inst1Quest9_Aim = "Venture into the Deadmines and slay Gilnid, once done, return to Maltimor Gartside at the Gartside Plot in Westfall."
 Inst1Quest9_Location = "Maltimor Gartside (Westfall - north from Gold Coast Quarry; "..YELLOW.."31.3,37.6"..WHITE..")"
-Inst1Quest9_Note = "You start this Questline at Christopher Hewen (Westfall - Sentinel Hill Inn; "..YELLOW.."52.3,52.8"..WHITE..").\nQuestline has 16 quests. Final reward blue items:1) OffHand Int/Shadow res/damage and healing, 2) Mail Shoulders Str/Stam, 3) Leather Gloves Str/Agi/Stam\nGilnid is at "..YELLOW.."[4]"..WHITE.."."
+Inst1Quest9_Note = "You start this Questline at Christopher Hewen (Westfall - Sentinel Hill Inn; "..YELLOW.."52.3,52.8"..WHITE..").\nGilnid is at "..YELLOW.."[4]"..WHITE.."."
 Inst1Quest9_Prequest = "The Harvest Golem Mystery VIII" -- 40477
 Inst1Quest9_Folgequest = "The Harvest Golem Mystery X" --40479
 --
@@ -282,7 +290,7 @@ Inst1Quest1_HORDE_Level = "18"
 Inst1Quest1_HORDE_Attain = "16"
 Inst1Quest1_HORDE_Aim = "Bring the Prototype Shredder X0-1 Schematic to Wrix Ozzlenut."
 Inst1Quest1_HORDE_Location = "Wrix Ozzlenut (Durotar - Sparkwater Port; "..YELLOW.."58.3,25.7"..WHITE..")"
-Inst1Quest1_HORDE_Note = ""..RED.."!!! FOR NOW QUEST IS BUGGED. Sometimes quest item doesnt drop at all."..WHITE.."\nSneed or Van Clif drops the Prototype Shredder X0-1 Schematic "..YELLOW.."[3]"..WHITE.." or "..YELLOW.."[6]"..WHITE..".\nCan confirm that Sneed drops the quest item but not 100% drop chance."
+Inst1Quest1_HORDE_Note = WHITE.."Sneed "..YELLOW.."[4]"..WHITE.." drops the Prototype Shredder X0-1 Schematic."
 Inst1Quest1_HORDE_Prequest = "No"
 Inst1Quest1_HORDE_Folgequest = "No"
 --
@@ -295,7 +303,7 @@ Inst1Quest2_HORDE_Level = "22"
 Inst1Quest2_HORDE_Attain = "15"
 Inst1Quest2_HORDE_Aim = "End Cookie, bring Grayson's Pendant"
 Inst1Quest2_HORDE_Location = "Captain Grayson (Westfall - Lighthouse; "..YELLOW.."30,86"..WHITE..")"
-Inst1Quest2_HORDE_Note = "You start this Questline on the northwest island(middle and biggest) Westfall; red book on the ground "..YELLOW.."26.1,16.5"..WHITE..").\n"
+Inst1Quest2_HORDE_Note = "You start this Questline on the northwest island in Westfall; red book on the ground "..YELLOW.."26.1,16.5"..WHITE..").\n"
 Inst1Quest2_HORDE_Prequest = "Food for Sailing Thoughts?" -- 40395
 Inst1Quest2_HORDE_Folgequest = "No"
 --
@@ -374,7 +382,7 @@ Inst2Quest5 = "5. The Glowing Shard" -- 6981
 Inst2Quest5_Level = "26"
 Inst2Quest5_Attain = "15"
 Inst2Quest5_Aim = "Travel to Ratchet to find someone that can tell you more about the glowing shard."
-Inst2Quest5_Location = "The Glowing Shard (drops from Mutanus the Devourer; "..YELLOW.."[9]"..WHITE..")"
+Inst2Quest5_Location = "The Glowing Shard (drops from Mutanus the Devourer; "..YELLOW.."[12]"..WHITE..")"
 Inst2Quest5_Note = "Mutanus the Devourer will only appear if you kill the four leader druids of the fang and escort the tauren druid at the entrance.\nWhen you have the Shard, you must bring it to the NPC Sputtervalve "..YELLOW.."63,37.2"..WHITE.." next to the Ratchet fly master, and then back to the top of the hill over Wailing Caverns to Falla Sagewind."
 Inst2Quest5_Prequest = "No"
 Inst2Quest5_Folgequest = "In Nightmares(ends in Darnassus)" -- 3370
@@ -399,7 +407,7 @@ Inst2Quest6name2 = "Verdant Boots"
 Inst2Quest7 = "(TW)7. Trapped in the Nightmare" -- 60124
 Inst2Quest7_Level = "19"
 Inst2Quest7_Attain = "16"
-Inst2Quest7_Aim = "Alanndarian Nightsong wants you to venture into the Wailing Caverns in the Northern Barrens and free Naralex from the Nightmare. Find his Disciple in the caverns to learn how. Return to her when you free Naralex.\nSlain Mutanus the Devourer"..YELLOW.."[9]"..WHITE.."."
+Inst2Quest7_Aim = "Alanndarian Nightsong wants you to venture into the Wailing Caverns in the Northern Barrens and free Naralex from the Nightmare. Find his Disciple in the caverns to learn how. Return to her when you free Naralex.\nSlain Mutanus the Devourer"..YELLOW.."[12]"..WHITE.."."
 Inst2Quest7_Location = "Alanndarian Nightsong (Auberdine - Darkshore; "..YELLOW.."37.7,40.7"..WHITE..")"
 Inst2Quest7_Note = "Mutanus the Devourer will only appear if you kill the four leader druids of the fang and escort the tauren druid at the entrance."
 Inst2Quest7_Prequest = "No"
@@ -476,7 +484,7 @@ Inst2Quest6_HORDE_Level = "22"
 Inst2Quest6_HORDE_Attain = "11"
 Inst2Quest6_HORDE_Aim = "Bring the Gems of Cobrahn, Anacondra, Pythas and Serpentis to Nara Wildmane in Thunder Bluff."
 Inst2Quest6_HORDE_Location = "Nara Wildmane (Thunder Bluff - Elder Rise; "..YELLOW.."75,31"..WHITE..")"
-Inst2Quest6_HORDE_Note = "The Questline starts at Hamuul Runetotem (Thunderbluff - Elder Rise; "..YELLOW.."78,28"..WHITE..")\nThe 4 druids drop the gems "..YELLOW.."[2]"..WHITE..", "..YELLOW.."[3]"..WHITE..", "..YELLOW.."[5]"..WHITE..", "..YELLOW.."[7]"..WHITE.."."
+Inst2Quest6_HORDE_Note = "The Questline starts at Hamuul Runetotem (Thunderbluff - Elder Rise; "..YELLOW.."78,28"..WHITE..")\nThe 4 druids drop the gems "..YELLOW.."[2]"..WHITE..", "..YELLOW.."[3]"..WHITE..", "..YELLOW.."[7]"..WHITE..", "..YELLOW.."[10]"..WHITE.."."
 Inst2Quest6_HORDE_Prequest = "The Barrens Oases -> Nara Wildmane" -- 886 -> 1490
 Inst2Quest6_HORDE_Folgequest = "No"
 --
@@ -500,9 +508,9 @@ Inst2Quest7name2_HORDE = Inst2Quest5name2
 Inst2Quest8_HORDE = "(TW)8. Arcane Arms" -- 80312
 Inst2Quest8_HORDE_Level = "18"
 Inst2Quest8_HORDE_Attain = "14"
-Inst2Quest8_HORDE_Aim = "Bring Chok'Garok 5 pieces of Moontouched Wood"..YELLOW.."trash"..WHITE..", a Crystal of the Serpent, and an Everchanging Essence from Wailing Caverns."
+Inst2Quest8_HORDE_Aim = "Bring Chok'Garok 5 pieces of Moontouched Wood"..WHITE..", a Crystal of the Serpent, and an Everchanging Essence from Wailing Caverns."
 Inst2Quest8_HORDE_Location = "Chok'Garok <Stonemaul Clan> (on a bank of Southfury River in the Barrens; "..YELLOW.."62.4,10.8"..WHITE..")"
-Inst2Quest8_HORDE_Note = ""..YELLOW.."Mage ONLY."..WHITE.." The Questline starts at Ureda <Mage Trainer> (Orgrimar) with quest 'Mastering the Arcane'.\nMoontouched Wood you get from "..YELLOW.."trash"..WHITE..", a Crystal of the Serpent from Lord Serpentis <Fanglord>"..YELLOW.."[7]"..WHITE..", and an Everchanging Essence from Lord Pythas <Fanglord> "..YELLOW.."[5]"..WHITE.."."
+Inst2Quest8_HORDE_Note = MAGE.."(Mage only)"..WHITE.." The Questline starts at Ureda <Mage Trainer> (Orgrimar) with quest 'Mastering the Arcane'.\nMoontouched Wood you get from "..YELLOW.."trash mobs"..WHITE..", a Crystal of the Serpent from Lord Serpentis <Fanglord>"..YELLOW.."[10]"..WHITE..", and an Everchanging Essence from Lord Pythas <Fanglord> "..YELLOW.."[7]"..WHITE.."."
 Inst2Quest8_HORDE_Prequest = "Mastering the Arcane" -- 80311
 Inst2Quest8_HORDE_Folgequest = "No"
 --
@@ -772,7 +780,7 @@ Inst4Quest16_Level = "40"
 Inst4Quest16_Attain = "35"
 Inst4Quest16_Aim = "Retrieve an Obsidian Power Source and bring it to Tabetha in Dustwallow Marsh."
 Inst4Quest16_Location = "Tabetha (Dustwallow Marsh; "..YELLOW.."46,57"..WHITE..")"
-Inst4Quest16_Note = "Mage only: \nThe Obsidian Power Source drops from the Obsidian Sentinel at "..YELLOW.."[5]"..WHITE.."."
+Inst4Quest16_Note = MAGE.."(Mage only)"..WHITE.." The Obsidian Power Source drops from the Obsidian Sentinel at "..YELLOW.."[5]"..WHITE.."."
 Inst4Quest16_Prequest = "The Exorcism" -- 1955
 Inst4Quest16_Folgequest = "Mana Surges" -- 1957
 -- No Rewards for this quest
@@ -1195,7 +1203,7 @@ Inst5Quest22_Attain = "30"
 Inst5Quest22_Aim = "In addition to that, I also need a Perfect Golem Core for the Pounder. The Dark Iron golems in the Blackrock Depths make a good source. Golem Lord Argelmach "..YELLOW.."[14]"..WHITE.." probably has one."
 Inst5Quest22_Location = "Oglethorpe Obnoticus <Master Gnome Engineer> (Stranglethorn Vale; Booty Bay "..YELLOW.."28.4,76.3"..WHITE..")."
 Inst5Quest22_Note = "This quest requires to collect 3 items. \n1) Thorium Tuned Servo (Scarlet Monastery from Scarlet Myrmidon)\n2) Perfect Golem Core (Blackrock Depths from Golem Lord Argelmach)\n3) Adamantite Rod (Stratholme from Crimson Hammersmith)\n'Crowd Pummeler 9-60' in Gnomeregan drops 'Intact Pounder Mainframe' that starts the PreQuest 'A Pounding Brain'."
-Inst5Quest22_Prequest = "A Pounding Brain (ENGINEERS only)" --80398
+Inst5Quest22_Prequest = "A Pounding Brain "..YELLOW.."(Engineers only)"..WHITE --80398
 Inst5Quest22_Folgequest = "No"
 --
 Inst5Quest22name1 = "Reinforced Red Pounder"
@@ -1734,7 +1742,7 @@ Inst7Quest6_Level = "25"
 Inst7Quest6_Attain = "20"
 Inst7Quest6_Aim = "Find 3 Soran'ruk Fragments and 1 Large Soran'ruk Fragment and return them to Doan Karhan in the Barrens."
 Inst7Quest6_Location = "Doan Karhan (Barrens; "..YELLOW.."49,57"..WHITE..")"
-Inst7Quest6_Note = "Warlock only: You get the 3 Soran'ruk Fragments from Twilight Accolytes in "..YELLOW.."[Blackfathom Deeps]"..WHITE..". You get the Large Soran'ruk Fragment in "..YELLOW.."[Shadowfang Keep]"..WHITE.." from Shadowfang Darksouls."
+Inst7Quest6_Note = WARLOCK.."(Warlock only)"..WHITE.." You get the 3 Soran'ruk Fragments from Twilight Accolytes in "..YELLOW.."[Blackfathom Deeps]"..WHITE..". You get the Large Soran'ruk Fragment in "..YELLOW.."[Shadowfang Keep]"..WHITE.." from Shadowfang Darksouls."
 Inst7Quest6_Prequest = "No"
 Inst7Quest6_Folgequest = "No"
 --
@@ -2608,7 +2616,7 @@ Inst10Quest6_Level = "60"
 Inst10Quest6_Attain = "60"
 Inst10Quest6_Aim = "Travel to Dire Maul in Feralas and recover 15 Satyr Blood from the Wildspawn Satyr that inhabit the Warpwood Quarter. Return to Daio in the Tainted Scar when this is done."
 Inst10Quest6_Location = "Daio the Decrepit (Blasted Lands - The Tainted Scar; "..YELLOW.."34,50"..WHITE..")"
-Inst10Quest6_Note = "Warlock only: This along with another quest given by Daio the Decrepit are Warlock only quests for the Ritual of Doom spell. The easiest way to get to the Wildspawn Satyr is to enter Dire Maul East through the 'back door' at the Lariss Pavilion (Feralas; "..YELLOW.."77,37"..WHITE.."). You'll need the Crescent Key, however."
+Inst10Quest6_Note = WARLOCK.."(Warlock only)"..WHITE.." This along with another quest given by Daio the Decrepit are Warlock only quests for the Ritual of Doom spell. The easiest way to get to the Wildspawn Satyr is to enter Dire Maul East through the 'back door' at the Lariss Pavilion (Feralas; "..YELLOW.."77,37"..WHITE.."). You'll need the Crescent Key, however."
 Inst10Quest6_Prequest = "No"
 Inst10Quest6_Folgequest = "No"
 -- No Rewards for this quest
@@ -2867,7 +2875,7 @@ Inst12Quest4_Level = "60"
 Inst12Quest4_Attain = "60"
 Inst12Quest4_Aim = "Read Mor'zul's Instructions. Summon a Xorothian Dreadsteed, defeat it, then bind its spirit to you."
 Inst12Quest4_Location = "Mor'zul Bloodbringer (Burning Steppes; "..YELLOW.."12,31"..WHITE..")"
-Inst12Quest4_Note = "Warlock only: Final Quest in the Warlock Epic mount questline. First you must shut down all Pylons marked with "..BLUE.."[B]"..WHITE.." and then kill Immol'thar at "..YELLOW.."[6]"..WHITE..". After that, you can begin the Summoning Ritual. Be sure to have upwards of 20 Soul Shards ready and have one Warlock specifically assigned to keeping the Bell, Candle and Wheel up. The Doomguards that come can be enslaved. After completion, talk to the Dreadsteed ghost to complete the quest."
+Inst12Quest4_Note = WARLOCK.."(Warlock only)"..WHITE.." Final Quest in the Warlock Epic mount questline. First you must shut down all Pylons marked with "..BLUE.."[B]"..WHITE.." and then kill Immol'thar at "..YELLOW.."[6]"..WHITE..". After that, you can begin the Summoning Ritual. Be sure to have upwards of 20 Soul Shards ready and have one Warlock specifically assigned to keeping the Bell, Candle and Wheel up. The Doomguards that come can be enslaved. After completion, talk to the Dreadsteed ghost to complete the quest."
 Inst12Quest4_Prequest = "Imp Delivery ("..YELLOW.."Scholomance"..WHITE..")" -- 7629
 Inst12Quest4_Folgequest = "No"
 -- No Rewards for this quest
@@ -2878,7 +2886,7 @@ Inst12Quest5_Level = "60"
 Inst12Quest5_Attain = "54"
 Inst12Quest5_Aim = "Return the book to its rightful owners."
 Inst12Quest5_Location = "The Emerald Dream (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest5_Note = "Druid only: You turn the book in to Lorekeeper Javon at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest5_Note = DRUID.."(Druid only)"..WHITE.." You turn the book in to Lorekeeper Javon at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest5_Prequest = "No"
 Inst12Quest5_Folgequest = "No"
 --
@@ -2890,7 +2898,7 @@ Inst12Quest6_Level = "60"
 Inst12Quest6_Attain = "54"
 Inst12Quest6_Aim = "Return the book to its rightful owners."
 Inst12Quest6_Location = "The Greatest Race of Hunters (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest6_Note = "Hunter only: You turn the book in to Lorekeeper Mykos at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest6_Note = HUNTER.."(Hunter only)"..WHITE.." You turn the book in to Lorekeeper Mykos at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest6_Prequest = "No"
 Inst12Quest6_Folgequest = "No"
 --
@@ -2902,7 +2910,7 @@ Inst12Quest7_Level = "60"
 Inst12Quest7_Attain = "54"
 Inst12Quest7_Aim = "Return the book to its rightful owners."
 Inst12Quest7_Location = "The Arcanist's Cookbook (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest7_Note = "Mage only: You turn the book in to Lorekeeper Kildrath at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest7_Note = MAGE.."(Mage only)"..WHITE.." You turn the book in to Lorekeeper Kildrath at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest7_Prequest = "No"
 Inst12Quest7_Folgequest = "No"
 --
@@ -2914,7 +2922,7 @@ Inst12Quest8_Level = "60"
 Inst12Quest8_Attain = "54"
 Inst12Quest8_Aim = "Return the book to its rightful owners."
 Inst12Quest8_Location = "The Light and How To Swing It (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest8_Note = "Paladin only: You turn the book in to Lorekeeper Mykos at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest8_Note = PALADIN.."(Paladin only)"..WHITE.." You turn the book in to Lorekeeper Mykos at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest8_Prequest = "No"
 Inst12Quest8_Folgequest = "No"
 --
@@ -2926,7 +2934,7 @@ Inst12Quest9_Level = "60"
 Inst12Quest9_Attain = "56"
 Inst12Quest9_Aim = "Return the book to its rightful owners."
 Inst12Quest9_Location = "Holy Bologna: What the Light Won't Tell You (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest9_Note = "Priest only: You turn the book in to Lorekeeper Javon at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest9_Note = "(Priest only) You turn the book in to Lorekeeper Javon at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest9_Prequest = "No"
 Inst12Quest9_Folgequest = "No"
 --
@@ -2938,7 +2946,7 @@ Inst12Quest10_Level = "60"
 Inst12Quest10_Attain = "54"
 Inst12Quest10_Aim = "Return the book to its rightful owners."
 Inst12Quest10_Location = "Garona: A Study on Stealth and Treachery (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest10_Note = "Rogue only: You turn the book in to Lorekeeper Kildrath at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest10_Note = ROGUE.."(Rogue only)"..WHITE.." You turn the book in to Lorekeeper Kildrath at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest10_Prequest = "No"
 Inst12Quest10_Folgequest = "No"
 --
@@ -2950,7 +2958,7 @@ Inst12Quest11_Level = "60"
 Inst12Quest11_Attain = "54"
 Inst12Quest11_Aim = "Return the book to its rightful owners."
 Inst12Quest11_Location = "Frost Shock and You (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest11_Note = "Shaman only: You turn the book in to Lorekeeper Javon at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest11_Note = SHAMAN.."(Shaman only)"..WHITE.." You turn the book in to Lorekeeper Javon at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest11_Prequest = "No"
 Inst12Quest11_Folgequest = "No"
 --
@@ -2962,7 +2970,7 @@ Inst12Quest12_Level = "60"
 Inst12Quest12_Attain = "54"
 Inst12Quest12_Aim = "Return the book to its rightful owners."
 Inst12Quest12_Location = "Harnessing Shadows (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest12_Note = "Warlock only: You turn the book in to Lorekeeper Mykos at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest12_Note = WARLOCK.."(Warlock only)"..WHITE.." You turn the book in to Lorekeeper Mykos at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest12_Prequest = "No"
 Inst12Quest12_Folgequest = "No"
 --
@@ -2974,7 +2982,7 @@ Inst12Quest13_Level = "60"
 Inst12Quest13_Attain = "54"
 Inst12Quest13_Aim = "Return the book to its rightful owners."
 Inst12Quest13_Location = "Codex of Defense (randomly drops off bosses in all Dire Maul wings)"
-Inst12Quest13_Note = "Warrior only: You turn the book in to Lorekeeper Kildrath at the "..YELLOW.."1' Library"..WHITE.."."
+Inst12Quest13_Note = WARRIOR.."(Warrior only)"..WHITE.." You turn the book in to Lorekeeper Kildrath at the "..YELLOW.."1' Library"..WHITE.."."
 Inst12Quest13_Prequest = "No"
 Inst12Quest13_Folgequest = "No"
 --
@@ -3022,7 +3030,7 @@ Inst12Quest17_Level = "60"
 Inst12Quest17_Attain = "60"
 Inst12Quest17_Aim = "Return Foror's Compendium of Dragon Slaying to the Athenaeum."
 Inst12Quest17_Location = "Foror's Compendium of Dragon Slaying (random boss drop in "..YELLOW.."Dire Maul"..WHITE..")"
-Inst12Quest17_Note = "Warrior or Paladin quest. It turns in to Lorekeeper Lydros at (Dire Maul West; "..YELLOW.."[1'] Library"..WHITE.."). Turning this in allows you to start the quest for Quel'Serrar."
+Inst12Quest17_Note = WARRIOR.."Warrior"..WHITE.." or "..PALADIN.."Paladin"..WHITE.." quest. It turns in to Lorekeeper Lydros at (Dire Maul West; "..YELLOW.."[1'] Library"..WHITE.."). Turning this in allows you to start the quest for Quel'Serrar."
 Inst12Quest17_Prequest = "No"
 Inst12Quest17_Folgequest = "The Forging of Quel'Serrar" -- 7508
 -- No Rewards for this quest
@@ -3046,7 +3054,7 @@ Inst12Quest19_Level = "60"
 Inst12Quest19_Attain = "55"
 Inst12Quest19_Aim = "Gather a Supercharged Arcane Resonation from the arcane elementals of Dire Maul for Parnabus in Gilneas."
 Inst12Quest19_Location = "Parnabus <Wandering Wizard> (Gilneas; "..YELLOW.."[22.9,74.4]"..WHITE..", very south of Gilneas City, west of river. inside of a lonely hose)."
-Inst12Quest19_Note = "Highly recommend to take prequest 'The Binding of Xanthar' from Hanvar the Righteous (Deadwind Pass in the small church outside of Karazhan "..YELLOW.."[40.9,79.3]"..WHITE..").\nReward for the last quest of The Upper Binding quest chain will be quest item 'The Upper Binding of Xanthar' for quest 'The Binding of Xanthar'.\nArcane Torrents big elementals in the circle around "..YELLOW.."[6]"..WHITE.." drop Supercharged Arcane Resonation."
+Inst12Quest19_Note = "Highly recommend to take prequest 'The Binding of Xanthar' from Hanvar the Righteous (Deadwind Pass in the small church outside of Karazhan "..YELLOW.."[40.9,79.3]"..WHITE..").\nArcane Torrents in the circle around "..YELLOW.."[6]"..WHITE.." drop Supercharged Arcane Resonation."
 Inst12Quest19_Prequest = "The Binding of Xanthar -> The Upper Binding I "..YELLOW.."[Upper Blackrock Spire]"..WHITE.." -> The Upper Binding II" --41015, 41011, 41012
 Inst12Quest19_Folgequest = "The Upper Binding IV" --41014
 --
@@ -3056,7 +3064,7 @@ Inst12Quest19name1 = "The Upper Binding of Xanthar" -- 61696
 Inst12Quest20 = "(TW)20. The Key to Karazhan VIII" -- 40827
 Inst12Quest20_Level = "60"
 Inst12Quest20_Attain = "58"
-Inst12Quest20_Aim = " Slay Immol'thar "..YELLOW.."[6]"..WHITE.." in Dire Maul West, retrieve Arcanized Gems from his skin, and return to Dolvan. "
+Inst12Quest20_Aim = "Slay Immol'thar "..YELLOW.."[6]"..WHITE.." in Dire Maul West, retrieve Arcanized Gems from his skin, and return to Dolvan. "
 Inst12Quest20_Location = "Dolvan Bracewind (Dustwallow Marsh - ; "..YELLOW.."[71.1,73.2]"..WHITE..")"
 Inst12Quest20_Note = ""
 Inst12Quest20_Prequest = "The Key to Karazhan I - VI -> The Key to Karazhan VII "..YELLOW.."[Stratholme]"..WHITE.." " --40817
@@ -3069,7 +3077,7 @@ Inst12Quest21_Level = "60"
 Inst12Quest21_Attain = "58"
 Inst12Quest21_Aim = "Gather a Binding Fragment from Cliff Breakers in "..YELLOW.."[Azshara]"..WHITE..", Overloaded Arcane Prism from Arcane Torrents in "..YELLOW.."[Dire Maul West]"..WHITE..", Slumberer's Shard from Weaver in the "..YELLOW.."[Sunken Temple]"..WHITE.." and an Arcanite Rod. Report to Itharius in the Swamp of Sorrows with the collected items."
 Inst12Quest21_Location = "Ralathius (Hyjal - Nordanaar; "..YELLOW.."[81.6,27.7]"..WHITE.." a green dragonkin)"
-Inst12Quest21_Note = "Arcane Torrents big elementals in the circle around "..YELLOW.."[6]"..WHITE.." drop Overloaded Arcane Prism.\nFinishing this questline you get the necklace and you will be able to enter Hyjal raid instance Emerald Sanctum."
+Inst12Quest21_Note = "Arcane Torrents in the circle around "..YELLOW.."[6]"..WHITE.." drop Overloaded Arcane Prism.\nFinishing this questline you get the necklace and you will be able to enter Hyjal raid instance Emerald Sanctum."
 Inst12Quest21_Prequest = "Into the Dream I -> Into the Dream II" --40957, 40958
 Inst12Quest21_Folgequest = "Into the Dream IV - VI" --40960, 40961, 40962
 --
@@ -3814,7 +3822,6 @@ Inst15Quest1_HORDE_Folgequest = Inst15Quest1_Folgequest
 --
 Inst15Quest1name1_HORDE = Inst15Quest1name1
 Inst15Quest1name2_HORDE = Inst15Quest1name2
-Inst15Quest1name3_HORDE = Inst15Quest1name3
 
 --Quest 2 Horde (same as Quest 2 Alliance)
 Inst15Quest2_HORDE = Inst15Quest2
@@ -4126,7 +4133,7 @@ Inst18Quest5_Level = "28"
 Inst18Quest5_Attain = "20"
 Inst18Quest5_Aim = "Gather the materials Furen Longbeard requires, and bring them to him in Stormwind."
 Inst18Quest5_Location = "Furen Longbeard (Stormwind - Dwarven District; "..YELLOW.."57,16"..WHITE..")"
-Inst18Quest5_Note = "Warrior only: You get the Vial of Phlogiston from Roogug at "..YELLOW.."[1]"..WHITE..".\n\nThe followup quest is different for each race. Burning Blood for Humans, Iron Coral for Dwarves and Gnomes and Sunscorched Shells for Night Elves." -- 1705, 1710, 1708
+Inst18Quest5_Note = WARRIOR.."(Warrior only)"..WHITE.." You get the Vial of Phlogiston from Roogug at "..YELLOW.."[1]"..WHITE..".\n\nThe followup quest is different for each race. Burning Blood for Humans, Iron Coral for Dwarves and Gnomes and Sunscorched Shells for Night Elves." -- 1705, 1710, 1708
 Inst18Quest5_Prequest = "The Shieldsmith" -- 1702
 Inst18Quest5_Folgequest = "(See Note)"
 -- No Rewards for this quest
@@ -4189,7 +4196,7 @@ Inst18Quest5_HORDE_Level = "30"
 Inst18Quest5_HORDE_Attain = "20"
 Inst18Quest5_HORDE_Aim = "Bring to Thun'grim Firegaze 15 Smoky Iron Ingots, 10 Powdered Azurite, 10 Iron Bars and a Vial of Phlogiston."
 Inst18Quest5_HORDE_Location = "Thun'grim Firegaze (The Barrens; "..YELLOW.."57,30"..WHITE..")"
-Inst18Quest5_HORDE_Note = "Warrior only: You get the Vial of Phlogiston from Roogug at "..YELLOW.."[1]"..WHITE..".\n\nCompleting this quest allows you to start four new quests from the same NPC."
+Inst18Quest5_HORDE_Note = WARRIOR.."(Warrior only)"..WHITE.." You get the Vial of Phlogiston from Roogug at "..YELLOW.."[1]"..WHITE..".\n\nCompleting this quest allows you to start four new quests from the same NPC."
 Inst18Quest5_HORDE_Prequest = "Speak with Thun'grim" -- 1825
 Inst18Quest5_HORDE_Folgequest = "(See Note)"
 -- No Rewards for this quest
@@ -4235,7 +4242,7 @@ Inst19Quest3_Level = "40"
 Inst19Quest3_Attain = "30"
 Inst19Quest3_Aim = "Bring the book Rituals of Power to Tabetha in Dustwallow Marsh."
 Inst19Quest3_Location = "Tabetha (Dustwallow Marsh; "..YELLOW.."43,57"..WHITE..")"
-Inst19Quest3_Note = "Mage only: You can find the book in the last corridor leading to Arcanist Doan ("..YELLOW.."[2]"..WHITE..")."
+Inst19Quest3_Note = MAGE.."(Mage only)"..WHITE.." You can find the book in the last corridor leading to Arcanist Doan ("..YELLOW.."[2]"..WHITE..")."
 Inst19Quest3_Prequest = "Get the Scoop" -- 1950
 Inst19Quest3_Folgequest = "Mage's Wand" -- 1952
 -- No Rewards for this quest
@@ -4583,7 +4590,7 @@ Inst23Quest9_Level = "60"
 Inst23Quest9_Attain = "60"
 Inst23Quest9_Aim = "Bring the Imp in a Yesr to the alchemy lab in the Scholomance. After the parchment is created, return the jar to Gorzeeki Wildeyes."
 Inst23Quest9_Location = "Gorzeeki Wildeyes (Burning Steppes; "..YELLOW.."12,31"..WHITE..")"
-Inst23Quest9_Note = "Warlock only: You find the alchemy lab at "..YELLOW.."[7]"..WHITE.."."
+Inst23Quest9_Note = WARLOCK.."(Warlock only)"..WHITE.." You find the alchemy lab at "..YELLOW.."[7]"..WHITE.."."
 Inst23Quest9_Prequest = "Mor'zul Bloodbringer - > Xorothian Stardust" -- 7562 -> 7625
 Inst23Quest9_Folgequest = "Dreadsteed of Xoroth ("..YELLOW.."Dire Maul West"..WHITE..")" -- 7631
 -- No Rewards for this quest
@@ -4616,7 +4623,7 @@ Inst23Quest12_Level = "58"
 Inst23Quest12_Attain = "55"
 Inst23Quest12_Aim = "Venture into Scholomance and recover the book 'Fire Beckoning and Command' for Strahad Farsan in Ratchet."
 Inst23Quest12_Location = "Strahad Farsan (The Barrens - Ratchet; "..YELLOW.."62.6,35.5"..WHITE..")"
-Inst23Quest12_Note = "Questline starts at Craftsman Wilhelm (Eastern Plaguelands - Light's Hope Chapel) with quest 'A New Rune-Frontier'.\n!!! You will get this reward after finishing the last quest in the questline."
+Inst23Quest12_Note = "Questline starts at Craftsman Wilhelm (Eastern Plaguelands - Light's Hope Chapel) with quest 'A New Rune-Frontier'.\nYou will get this reward after finishing the last quest in the questline."
 Inst23Quest12_Prequest = "A New Rune-Frontier -> The Secrets of Darkforging -> The Secrets of Darkforging" -- 40234, 40235, 40236
 Inst23Quest12_Folgequest = "A Meeting With The Dreadlord" --40238
 --
@@ -4779,8 +4786,8 @@ Inst24Quest1_Level = "22"
 Inst24Quest1_Attain = "20"
 Inst24Quest1_Aim = "Using Jordan's Weapon Notes, find some Whitestone Oak Lumber, Bailor's Refined Ore Shipment, Jordan's Smithing Hammer, and a Kor Gem, and return them to Jordan Stilwell in Ironforge."
 Inst24Quest1_Location = "Jordan Stilwell (Dun Morogh - Ironforge Entrance; "..YELLOW.."52,36"..WHITE..")"
-Inst24Quest1_Note = "Paladin only: To see the note click on  "..YELLOW.."[The Test of Righteousness Information]"..WHITE.."."
-Inst24Quest1_Page = {2, "Only Paladins can get this quest!\n\n1. You get the  Whitestone Oak Lumber from Goblin Woodcarvers in "..YELLOW.."[Deadmines]"..WHITE..".\n\n2. To get the Bailor's Refined Ore Shipment you must talk to Bailor Stonehand (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE.."). He gives you the 'Bailor's Ore Shipment' quest. You find the Jordan's Ore Shipment behind a tree at "..YELLOW.."71,21"..WHITE.."\n\n3. You get Jordan's Smithing Hammer in "..YELLOW.."[Shadowfang Keep]"..WHITE.." at "..YELLOW.."[3]"..WHITE..".\n\n4. To get a Kor Gem you have to go to Thundris Windweaver (Darkshore - Auberdine; "..YELLOW.."37,40"..WHITE..") and do the 'Seeking the Kor Gem' quest. For this quest, you must kill Blackfathom oracles or priestesses before "..YELLOW.."[Blackfathom Deeps]"..WHITE..". They drop a corrupted Kor Gem. Thundris Windweaver will clean it for you.", };
+Inst24Quest1_Note = PALADIN.."(Paladin only)"..WHITE.." To see the note click on  "..YELLOW.."[The Test of Righteousness Information]"..WHITE.."."
+Inst24Quest1_Page = {2, "\n1. You get the  Whitestone Oak Lumber from Goblin Woodcarvers in "..YELLOW.."[Deadmines]"..WHITE..".\n\n2. To get the Bailor's Refined Ore Shipment you must talk to Bailor Stonehand (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE.."). He gives you the 'Bailor's Ore Shipment' quest. You find the Jordan's Ore Shipment behind a tree at "..YELLOW.."71,21"..WHITE.."\n\n3. You get Jordan's Smithing Hammer in "..YELLOW.."[Shadowfang Keep]"..WHITE.." at "..YELLOW.."[3]"..WHITE..".\n\n4. To get a Kor Gem you have to go to Thundris Windweaver (Darkshore - Auberdine; "..YELLOW.."37,40"..WHITE..") and do the 'Seeking the Kor Gem' quest. For this quest, you must kill Blackfathom oracles or priestesses before "..YELLOW.."[Blackfathom Deeps]"..WHITE..". They drop a corrupted Kor Gem. Thundris Windweaver will clean it for you.", };
 Inst24Quest1_Prequest = "The Tome of Valor -> The Test of Righteousness" -- 1651 -> 1653
 Inst24Quest1_Folgequest = "The Test of Righteousness" -- 1806
 --
@@ -4792,7 +4799,7 @@ Inst24Quest2_Level = "25"
 Inst24Quest2_Attain = "20"
 Inst24Quest2_Aim = "Find 3 Soran'ruk Fragments and 1 Large Soran'ruk Fragment and return them to Doan Karhan in the Barrens."
 Inst24Quest2_Location = "Doan Karhan (Barrens; "..YELLOW.."49,57"..WHITE..")"
-Inst24Quest2_Note = "WARLOCK only: You get the 3 Soran'ruk Fragments from Twilight Accolytes in "..YELLOW.."[Blackfathom Deeps]"..WHITE..". You get the Large Soran'ruk Fragment in "..YELLOW.."[Shadowfang Keep]"..WHITE.." from Shadowfang Darksouls."
+Inst24Quest2_Note = WARLOCK.."(Warlock only)"..WHITE.." You get the 3 Soran'ruk Fragments from Twilight Accolytes in "..YELLOW.."[Blackfathom Deeps]"..WHITE..". You get the Large Soran'ruk Fragment in "..YELLOW.."[Shadowfang Keep]"..WHITE.." from Shadowfang Darksouls."
 Inst24Quest2_Prequest = "No"
 Inst24Quest2_Folgequest = "No"
 --
@@ -5081,7 +5088,7 @@ Inst25Quest16_Level = "60"
 Inst25Quest16_Attain = "50"
 Inst25Quest16_Aim = "Find the Black Guard Swordsmith in Stratholme and destroy him. Recover the Insignia of the Black Guard and return to Seril Scourgebane."
 Inst25Quest16_Location = "Seril Scourgebane (Winterspring - Everlook; "..YELLOW.."61,37"..WHITE..")"
-Inst25Quest16_Note = "Blacksmith only: The Black Guard Swordsmith is summoned near "..YELLOW.."[15]"..WHITE.."."
+Inst25Quest16_Note = YELLOW.."(Blacksmith only)"..WHITE.." The Black Guard Swordsmith is summoned near "..YELLOW.."[15]"..WHITE.."."
 Inst25Quest16_Prequest = "No"
 Inst25Quest16_Folgequest = "No"
 --
@@ -5093,7 +5100,7 @@ Inst25Quest17_Level = "60"
 Inst25Quest17_Attain = "50"
 Inst25Quest17_Aim = "Travel to Stratholme and kill the Crimson Hammersmith. Recover the Crimson Hammersmith's Apron and return to Lilith."
 Inst25Quest17_Location = "Lilith the Lithe (Winterspring - Everlook; "..YELLOW.."61,37"..WHITE..")"
-Inst25Quest17_Note = "Blacksmith only: The Crimson Hammersmith is summoned at "..YELLOW.."[8]"..WHITE.."."
+Inst25Quest17_Note = YELLOW.."(Blacksmith only)"..WHITE.." The Crimson Hammersmith is summoned at "..YELLOW.."[8]"..WHITE.."."
 Inst25Quest17_Prequest = "No"
 Inst25Quest17_Folgequest = "No"
 --
@@ -5106,7 +5113,7 @@ Inst25Quest18_Attain = "30"
 Inst25Quest18_Aim = "The last component I need is a high quality adamantite rod used for the endoskeleton. I believe Stratholme's forges used to make such rods in the past."
 Inst25Quest18_Location = "Oglethorpe Obnoticus <Master Gnome Engineer> (Stranglethorn Vale; Booty Bay "..YELLOW.."28.4,76.3"..WHITE..")."
 Inst25Quest18_Note = "This quest requires to collect 3 items. \n1) Thorium Tuned Servo (Scarlet Monastery from Scarlet Myrmidon)\n2) Perfect Golem Core (Blackrock Depths from Golem Lord Argelmach)\n3) Adamantite Rod (Stratholme from Crimson Hammersmith "..YELLOW.."[8]"..WHITE..")\n'Crowd Pummeler 9-60' in Gnomeregan drops 'Intact Pounder Mainframe' that starts the PreQuest 'A Pounding Brain'."
-Inst25Quest18_Prequest = "A Pounding Brain (ENGINEERS only)" --80398
+Inst25Quest18_Prequest = "A Pounding Brain "..YELLOW.."(Engineers only)"..WHITE --80398
 Inst25Quest18_Folgequest = "No"
 --
 Inst25Quest18name1 = "Reinforced Red Pounder"
@@ -5375,7 +5382,7 @@ Inst25Quest19_HORDE_Attain = "30"
 Inst25Quest19_HORDE_Aim = "The last component I need is a high quality adamantite rod used for the endoskeleton. I believe Stratholme's forges used to make such rods in the past."
 Inst25Quest19_HORDE_Location = "Oglethorpe Obnoticus <Master Gnome Engineer> (Stranglethorn Vale; Booty Bay "..YELLOW.."28.4,76.3"..WHITE..")."
 Inst25Quest19_HORDE_Note = "This quest requires to collect 3 items. \n1) Thorium Tuned Servo (Scarlet Monastery from Scarlet Myrmidon)\n2) Perfect Golem Core (Blackrock Depths from Golem Lord Argelmach)\n3) Adamantite Rod (Stratholme from Crimson Hammersmith "..YELLOW.."[8]"..WHITE..")\n'Crowd Pummeler 9-60' in Gnomeregan drops 'Intact Pounder Mainframe' that starts the PreQuest 'A Pounding Brain'."
-Inst25Quest19_HORDE_Prequest = "A Pounding Brain (ENGINEERS only)" --80398
+Inst25Quest19_HORDE_Prequest = "A Pounding Brain "..YELLOW.."(Engineers only)"..WHITE --80398
 Inst25Quest19_HORDE_Folgequest = "No"
 --
 Inst25Quest19name1_HORDE = "Reinforced Red Pounder"
@@ -5683,7 +5690,7 @@ Inst28Quest8_Level = "52"
 Inst28Quest8_Attain = "50"
 Inst28Quest8_Aim = "Bring a total of 6 Voodoo Feathers from the trolls in sunken temple."
 Inst28Quest8_Location = "Impsy (Felwood; "..YELLOW.."42,45"..WHITE..")"
-Inst28Quest8_Note = "Warlock only: Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center."
+Inst28Quest8_Note = WARLOCK.."(Warlock only)"..WHITE.." Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center."
 Inst28Quest8_Prequest = "An Imp's Request -> The Wrong Stuff" -- 8419 -> 8421
 Inst28Quest8_Folgequest = "No"
 --
@@ -5697,7 +5704,7 @@ Inst28Quest9_Level = "52"
 Inst28Quest9_Attain = "50"
 Inst28Quest9_Aim = "Bring the Voodoo Feathers from the trolls in the Sunken Temple to the Fallen Hero of the Horde."
 Inst28Quest9_Location = "Fallen Hero of the Horde (Swamp of Sorrows; "..YELLOW.."34,66"..WHITE..")"
-Inst28Quest9_Note = "Warrior only: Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center.\nHorde questline starts in Orgrimar at warrior trainer Sorek "..YELLOW.."80.4,32.3"..WHITE.."."
+Inst28Quest9_Note = WARRIOR.."(Warrior only)"..WHITE.." Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center.\nHorde questline starts in Orgrimar at warrior trainer Sorek "..YELLOW.."80.4,32.3"..WHITE.."."
 Inst28Quest9_Prequest = "A Troubled Spirit -> War on the Shadowsworn" -- 8417 -> 8424
 Inst28Quest9_Folgequest = "No"
 --
@@ -5711,7 +5718,7 @@ Inst28Quest10_Level = "52"
 Inst28Quest10_Attain = "50"
 Inst28Quest10_Aim = "Retrieve a Putrid Vine from the guardian at the bottom of the Sunken Temple and return to Torwa Pathfinder."
 Inst28Quest10_Location = "Torwa Pathfinder (Un'Goro Crater; "..YELLOW.."72,76"..WHITE..")"
-Inst28Quest10_Note = "Druid only: The Putrid Vine drops from Atal'alarion who is summoned at "..YELLOW.."[1]"..WHITE.." by activating the statues in the order listed on the map."
+Inst28Quest10_Note = DRUID.."(Druid only)"..WHITE.." The Putrid Vine drops from Atal'alarion who is summoned at "..YELLOW.."[1]"..WHITE.." by activating the statues in the order listed on the map."
 Inst28Quest10_Prequest = "Torwa Pathfinder -> Toxic Test" -- 9063 -> 9051
 Inst28Quest10_Folgequest = "No"
 --
@@ -5725,7 +5732,7 @@ Inst28Quest11_Level = "52"
 Inst28Quest11_Attain = "50"
 Inst28Quest11_Aim = "Bring the Tooth of Morphaz to Ogtinc in Azshara. Ogtinc resides atop the cliffs northeast the Ruins of Eldarath."
 Inst28Quest11_Location = "Ogtinc (Azshara; "..YELLOW.."42,43"..WHITE..")"
-Inst28Quest11_Note = "Hunter only: Morphaz is at "..YELLOW.."[5]"..WHITE.."."
+Inst28Quest11_Note = HUNTER.."(Hunter only)"..WHITE.." Morphaz is at "..YELLOW.."[5]"..WHITE.."."
 Inst28Quest11_Prequest = "The Hunter's Charm -> Wavethrashing" -- 8151 -> 8231
 Inst28Quest11_Folgequest = "No"
 --
@@ -5739,7 +5746,7 @@ Inst28Quest12_Level = "52"
 Inst28Quest12_Attain = "50"
 Inst28Quest12_Aim = "Retrieve the Arcane Shard from Morphaz and return to Archmage Xylem."
 Inst28Quest12_Location = "Archmage Xylem (Azshara; "..YELLOW.."29,40"..WHITE..")"
-Inst28Quest12_Note = "Mage only: Morphaz is at "..YELLOW.."[5]"..WHITE.."."
+Inst28Quest12_Note = MAGE.."(Mage only)"..WHITE.." Morphaz is at "..YELLOW.."[5]"..WHITE.."."
 Inst28Quest12_Prequest = "Magic Dust -> The Siren's Coral" -- 8251 -> 8252
 Inst28Quest12_Folgequest = "No"
 --
@@ -5753,7 +5760,7 @@ Inst28Quest13_Level = "52"
 Inst28Quest13_Attain = "50"
 Inst28Quest13_Aim = "Kill Morphaz in the sunken temple of Atal'Hakkar, and return his blood to Greta Mosshoof in Felwood. The entrance to the sunken temple can be found in the Swamp of Sorrows."
 Inst28Quest13_Location = "Ogtinc (Azshara; "..YELLOW.."42,43"..WHITE..")"
-Inst28Quest13_Note = "Priest only: Morphaz is at "..YELLOW.."[5]"..WHITE..". Greta Mosshoof is at Felwood - Emerald Sanctuary ("..YELLOW.."51,82"..WHITE..")."
+Inst28Quest13_Note = "(Priest only) Morphaz is at "..YELLOW.."[5]"..WHITE..". Greta Mosshoof is at Felwood - Emerald Sanctuary ("..YELLOW.."51,82"..WHITE..")."
 Inst28Quest13_Prequest = "Cenarion Aid -> The Ichor of Undeath" -- 8254 -> 8256
 Inst28Quest13_Folgequest = "No"
 --
@@ -5767,7 +5774,7 @@ Inst28Quest14_Level = "52"
 Inst28Quest14_Attain = "50"
 Inst28Quest14_Aim = "Return the Azure Key to Lord Jorach Ravenholdt."
 Inst28Quest14_Location = "Archmage Xylem (Azshara; "..YELLOW.."29,40"..WHITE..")"
-Inst28Quest14_Note = "Rogue only: The Azure Key drops from Morphaz at "..YELLOW.."[5]"..WHITE..". Lord Jorach Ravenholdt is at Alterac Mountains - Ravenholdt ("..YELLOW.."86,79"..WHITE..")."
+Inst28Quest14_Note = ROGUE.."(Rogue only)"..WHITE.." The Azure Key drops from Morphaz at "..YELLOW.."[5]"..WHITE..". Lord Jorach Ravenholdt is at Alterac Mountains - Ravenholdt ("..YELLOW.."86,79"..WHITE..")."
 Inst28Quest14_Prequest = "A Simple Request -> Encoded Fragments" -- 8233 -> 8235
 Inst28Quest14_Folgequest = "No"
 --
@@ -5781,7 +5788,7 @@ Inst28Quest15_Level = "52"
 Inst28Quest15_Attain = "50"
 Inst28Quest15_Aim = "Bring the voodoo feathers to Ashlam Valorfist."
 Inst28Quest15_Location = "Commander Ashlam Valorfist (Western Plaguelands - Chillwind Camp; "..YELLOW.."43,85"..WHITE..")"
-Inst28Quest15_Note = "Paladin only: Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center."
+Inst28Quest15_Note = PALADIN.."(Paladin only)"..WHITE.." Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center."
 Inst28Quest15_Prequest = "Inert Scourgestones" -- 8416
 Inst28Quest15_Folgequest = "No"
 --
@@ -6015,7 +6022,7 @@ Inst28Quest15_HORDE_Level = "52"
 Inst28Quest15_HORDE_Attain = "50"
 Inst28Quest15_HORDE_Aim = "Bring the voodoo feathers to Bath'rah the Windwatcher."
 Inst28Quest15_HORDE_Location = "Bath'rah the Windwatcher (Alterac Mountains; "..YELLOW.."80,67"..WHITE..")"
-Inst28Quest15_HORDE_Note = "Shaman only: Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center."
+Inst28Quest15_HORDE_Note = SHAMAN.."(Shaman only)"..WHITE.." Feather drops from each of the named trolls on the ledges overlooking the big room with the hole in the center."
 Inst28Quest15_HORDE_Prequest = "Spirit Totem" -- 8412
 Inst28Quest15_HORDE_Folgequest = "No"
 --
@@ -6600,7 +6607,7 @@ Inst32Quest11_Level = "30"
 Inst32Quest11_Attain = "30"
 Inst32Quest11_Aim = "Find Someone who can figure out what to do with the Mainframe."
 Inst32Quest11_Location = "Intact Pounder Mainframe"
-Inst32Quest11_Note = "Intact Pounder Mainframe that starts the quest can drop from Crowd Pummeler 9-60"..YELLOW.."[6]"..WHITE.."(low chance).\nAvailable for ENGINEERS with 125+ skill."
+Inst32Quest11_Note = "Intact Pounder Mainframe that starts the quest can drop from Crowd Pummeler 9-60 "..YELLOW.."[6]"..WHITE.." (low chance).\nAvailable for Engineers with 125+ skill."
 Inst32Quest11_Prequest = "No"
 Inst32Quest11_Folgequest = "To Build a Pounder" -- 80401
 -- No Rewards for this quest
@@ -6801,7 +6808,7 @@ Inst39Quest3_HORDE_Level = "37"
 Inst39Quest3_HORDE_Attain = "26"
 Inst39Quest3_HORDE_Aim = "Venture into the Crescent Grove and root out the evil inside."
 Inst39Quest3_HORDE_Location = "Loruk Foreststrider (Ashenvale - Splintertree Post "..YELLOW.."73.3,59.3"..WHITE..")"
-Inst39Quest3_HORDE_Note = "Kill the final boss Master Raxxieth "..YELLOW.."[6]"..WHITE..".\nQuestline starts at Loruk Foreststrider with quest 'Mysteries of the Grove'."
+Inst39Quest3_HORDE_Note = "Kill the final boss Master Raxxieth "..YELLOW.."[5]"..WHITE..".\nQuestline starts at Loruk Foreststrider with quest 'Mysteries of the Grove'."
 Inst39Quest3_HORDE_Prequest = "Mysteries of the Grove -> Feran's Report" -- 40145, 40146
 Inst39Quest3_HORDE_Folgequest = "No"
 --
@@ -7262,7 +7269,7 @@ Inst44Quest7_Level = "45"
 Inst44Quest7_Attain = "38"
 Inst44Quest7_Aim = "Recover the Manuscript on Hydromancy II for Magus Hallister at Theramore Isle in Dustwallow Marsh."
 Inst44Quest7_Location = "Magus Hallister (Dustwallow Marsh - Theramore, central Tower)"
-Inst44Quest7_Note = RED.."(Mage ONLY)"..WHITE.." The Manuscript on Hydromancy II in the building "..YELLOW.."[b]"..WHITE..", go right, on the dresser (south side)."
+Inst44Quest7_Note = MAGE.."(Mage only)"..WHITE.." The Manuscript on Hydromancy II in the building "..YELLOW.."[b]"..WHITE..", go right, on the dresser (south side)."
 Inst44Quest7_Prequest = "Mannoroc Demonic Sigil" -- 40407
 Inst44Quest7_Folgequest = "No"
 --
@@ -7860,7 +7867,7 @@ Inst34Quest1_Level = "60"
 Inst34Quest1_Attain = "60"
 Inst34Quest1_Aim = "Hastat the Ancient has asked that you bring him a Mature Blue Dragon Sinew. Should you find this sinew, return it to Hastat in Felwood."
 Inst34Quest1_Location = "Hastat the Ancient (Felwood - Irontree Woods; "..YELLOW.."48,24"..WHITE..")"
-Inst34Quest1_Note = "Hunter only: Kill Azuregos to get the Mature Blue Dragon Sinew. He walks around the middle of the southern peninsula in Azshara near "..YELLOW.."[1]"..WHITE.."."
+Inst34Quest1_Note = HUNTER.."(Hunter only)"..WHITE.." Kill Azuregos to get the Mature Blue Dragon Sinew. He walks around the middle of the southern peninsula in Azshara near "..YELLOW.."[1]"..WHITE.."."
 Inst34Quest1_Prequest = "The Ancient Leaf ("..YELLOW.."Molten Core"..WHITE..")" -- 7632
 Inst34Quest1_Folgequest = "No"
 --

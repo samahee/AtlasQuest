@@ -659,43 +659,21 @@ These fonts are useless atm -->
 	</Frame>
 
 <!--          SHOW HIDE (PANEL) BUTTON            -->
-
-	<Frame name="AtlasQuestButtonFrame" toplevel="true" enableMouse="true" parent="AtlasFrame" hidden="false">
-	  <Size>
-			<AbsDimension x="1" y="1"/>
-		</Size>
-		<Anchors>
- 			<Anchor point="TOPRIGHT">
- 			</Anchor>
- 		</Anchors>
-	  <Frames>
-	  <Button name="CLOSEbutton3" inherits="OptionsButtonTemplate" text="AtlasQuest">
-          <Size>
-            <AbsDimension x="90" y="20"/>
-          </Size>
-	      <Anchors>
-		     <Anchor point="TOPRIGHT">
-			   <Offset>
-				  <AbsDimension x="-120" y="-61"/>
-			   </Offset>
-		     </Anchor>
-	      </Anchors>
-	      <Scripts>
-		    <OnClick>
-		       AQCLOSE_OnClick();
-	        </OnClick>
-	        <OnUpdate>
-	        	if ( AtlasFrame == nil ) then
-	        		this:Hide();
-	        	end
-	        </OnUpdate>
-	        <OnShow>
-	        	if ( AtlasFrame == nil ) then
-	        		this:Hide();
-	        	end
-	        </OnShow>
-	      </Scripts>
-        </Button>
-        </Frames>
-	</Frame>
+   <Button name="CLOSEbutton3" parent="AtlasFrame" inherits="OptionsButtonTemplate" text="AtlasQuest">
+         <Size>
+         <AbsDimension x="90" y="20"/>
+         </Size>
+      <Anchors>
+         <Anchor point="TOPRIGHT">
+         <Offset>
+            <AbsDimension x="-120" y="-61"/>
+         </Offset>
+         </Anchor>
+      </Anchors>
+      <Scripts>
+         <OnClick>
+            AQCLOSE_OnClick();
+         </OnClick>
+      </Scripts>
+   </Button>
 </Ui>

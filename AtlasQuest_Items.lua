@@ -34,7 +34,6 @@
 local WHITE = "|cffFFFFFF";
 local GREEN = "|cff1eff00";
 local RED = "|cffff0000";
-
 -- Item Color
 local Itemc1 = "|cff9d9d9d" --grey
 local Itemc2 = "|cffFFFFFF" --white
@@ -43,19 +42,10 @@ local Itemc4 = "|cff0070dd" --blue
 local Itemc5 = "|cffa335ee" --purple
 local Itemc6 = "|cffFF8000" --orange
 local Itemc7 = "|cffFF0000" --red
---
 local Itemc8 = "|cffFFd200" --ingame yellow
-
-
-
-
 ----------------------------------------------
 ---------------- DUNGEONS --------------------
 ----------------------------------------------
-
-
-
-
 --------------- INST1 - Deadmines (VC) ---------------
 
 --Quest 1 Alliance
