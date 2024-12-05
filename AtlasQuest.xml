@@ -40,7 +40,7 @@
 		<Anchors>
 			<Anchor point="CENTER">
 				<Offset>
-					<AbsDimension x="0" y="-240"/>
+					<AbsDimension x="0" y="0"/>
 				</Offset>
 			</Anchor>
 		</Anchors>
@@ -388,6 +388,9 @@
 				this:SetMovable(1);
 				getglobal("AtlasQuestOptionFrame_Title"):SetText(AQOptionsCaptionTEXT);
 			</OnLoad>
+			<OnShow>
+				AtlasQuestOptionFrame_OnShow()
+			</OnShow>
 			<OnDragStart>
 				this:StartMoving();
 				this.isMoving = true;
