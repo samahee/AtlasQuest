@@ -3,7 +3,7 @@
 ## Notes: Shows quests for instances.
 ## Notes-ruRU: Показывает задания в подземельях и рейдах.
 ## Notes-deDE: Zeigt die Quests, die es f\195\188r die jeweiligen Instanzen gibt.
-## Notes-koKR: Shows the Quests for the instance.
+## Notes-koKR: 아틀라스 던전 퀘스트 도우미
 ## Notes-zhCN: Shows the Quests for the instance.
 ## Notes-esES: Muestra las Misiones para la instancia.
 ## Author:
@@ -27,6 +27,7 @@ Locale\localization.de.lua
 Locale\localization.ru.lua
 Locale\localization.cn.lua
 Locale\localization.es.lua
+Locale\localization.ko.lua
 
 AtlasQuest_InsideFrame.xml
 AtlasQuest.xml
